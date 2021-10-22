@@ -5,4 +5,4 @@ n = int(baseNumber)
 nn = int(baseNumber+baseNumber)
 nnn = int(baseNumber+baseNumber+baseNumber)
 execSum = n + nn + nnn
-print(f"{n} + {nn}+{nnn} = {execSum}")
+print(f"{n} + {nn} + {nnn} = {execSum}")
