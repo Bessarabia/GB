@@ -6,10 +6,13 @@
 userInput = input("Provide the number: ")
 loopCounter = len(userInput) - 1
 userInt = int(userInput)
+maxDigit = userInt % 10
 
-while loopCounter > 0
-  digit = userint%10^loopcounter
-  nextdigit = userint%10^(loopcounter - 1)
-  maxDigit = max(digit,nextdigit)
-  loopCounter--
+while loopCounter > 0:
+  digit = userInt % 10
+  userInt = (userInt - digit)/10
+  maxDigit = max(digit, maxDigit)
+  loopCounter = loopCounter - 1
   continue
+
+print ("Maximal digit is %d" % maxDigit)
