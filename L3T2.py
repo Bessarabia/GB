@@ -7,5 +7,8 @@
 def createUser(**kwargs):
     return kwargs
 
-print (createUser(name=input("Name: "), patronymic=input("Patronymic: "), birthyear=input("Birthyear: "),
-                     city=input("City: "), email=input("email: "), phone=input("Phone: ")))
+userDict = createUser(name=input("Name: "), patronymic=input("Patronymic: "), birthyear=input("Birthyear: "),
+                     city=input("City: "), email=input("email: "), phone=input("Phone: "))
+
+print(userDict['name'],' ', userDict['patronymic'],' ', userDict['birthyear'],' ', userDict['city'],' ', userDict['email'], ' ', userDict['phone'])
+
